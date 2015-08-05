@@ -5,7 +5,8 @@ class String
     player   = self.downcase
     opponent = opponent.downcase
 
-    if player == "rock"
+    case player
+    when "rock"
       if opponent == "scissors"
         true
       elsif opponent == "paper"
@@ -13,7 +14,7 @@ class String
       elsif opponent == self
         "tie"
       end
-    elsif player == "scissors"
+    when "scissors"
       if opponent == "rock"
         false
       elsif opponent == "paper"
@@ -21,7 +22,7 @@ class String
       elsif opponent == "scissors"
         "tie"
       end
-    elsif player == "paper"
+    when "paper"
       if opponent == "rock"
         true
       elsif opponent == "scissors"
