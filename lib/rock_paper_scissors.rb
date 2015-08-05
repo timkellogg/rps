@@ -2,8 +2,8 @@ class String
 
   define_method(:rock_paper_scissors) do |opponent|
 
-    player   = self.downcase
-    opponent = opponent.downcase
+    player   = self.downcase()
+    opponent = opponent.downcase()
 
     case player
     when "rock"
