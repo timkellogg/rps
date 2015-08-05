@@ -14,9 +14,9 @@ get('/rock_paper_scissors') do
   winner = player.rock_paper_scissors(opponent)
 
   if winner == true
-    @output = "You win!"
+    @output = "You are the winner!"
   elsif winner == false
-    @output = "Computer won :("
+    @output = "The computer is the winner!"
   else
     puts "got here"
     @output = "Tie!"
